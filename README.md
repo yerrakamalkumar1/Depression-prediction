@@ -1,77 +1,106 @@
-Predicting Depression from Social Media Activity (Synthetic Data)
-📌 Overview
+# Depression Prediction from Social Media Activity
 
-This project explores the use of machine learning to predict the likelihood of depression based on synthetic social media activity data.
-The dataset includes behavioral features (posting patterns, sentiment, interaction rates) and text data (synthetic posts), enabling experimentation with NLP and classification models.
+Machine learning project by **Kamal Kumar** for predicting depression risk from synthetic social media activity data.
 
-⚠️ Disclaimer: This dataset is fully synthetic and not derived from real user data. It is intended for educational and research purposes only.
+## Resume Summary
 
-🗂️ Project Structure
-├── predict_depression_from_social_media.py   # Main script: generates dataset, trains models, evaluates
-├── synthetic_depression_dataset.xlsx         # Synthetic dataset (>100 samples)
-├── outputs/                                  # Saved plots and visualizations
-│   ├── roc_curves.png
-│   ├── confusion_matrices.png
-│   └── text_feature_importance.png
-└── README.md                                 # Project documentation
+This project demonstrates practical experience in data science, machine learning, natural language processing, and model evaluation. It combines behavioral social media features with synthetic text data, builds classification pipelines, and evaluates model performance using standard ML metrics and visualizations.
 
-⚙️ Features
+## Project Overview
 
-Synthetic dataset generation with:
+The goal of this project is to explore how machine learning can identify patterns associated with possible depression indicators in social media activity. The dataset used here is fully synthetic and includes posting behavior, sentiment-style features, interaction patterns, and generated text posts.
 
-Posting behavior metrics (e.g., posting frequency, night-time activity).
+**Important:** This project is for educational and research experimentation only. It is not a clinical tool and should not be used for diagnosis.
 
-Sentiment-based features (mean sentiment, variance, negative word rate).
+## Skills Highlighted
 
-NLP text data (synthetic user posts with positive/negative/neutral words).
+- Python programming
+- Data generation and preprocessing
+- Machine learning classification
+- Natural language processing with TF-IDF
+- Feature engineering
+- Model evaluation and visualization
+- Logistic Regression and Random Forest modeling
+- Pandas, NumPy, scikit-learn, Matplotlib, and Seaborn
 
-ML pipelines for:
+## Key Features
 
+- Generates a synthetic social media depression dataset
+- Creates numerical behavior-based features such as posting frequency, night posting ratio, sentiment variation, and interaction rate
+- Generates synthetic text posts using positive, negative, and neutral vocabulary
+- Builds ML pipelines with numeric scaling and TF-IDF text vectorization
+- Trains Logistic Regression and Random Forest classifiers
+- Evaluates models using accuracy, ROC AUC, classification report, and confusion matrix
+- Saves ROC curve, confusion matrix, and feature importance visualizations
+
+## Repository Structure
+
+```text
+.
+├── predict_depression_from_social_media.py
+├── synthetic_depression_dataset.xlsx
+├── Preview__Predicting-Depression-from-Social-Media-Activity__first_200_rows_.csv
+└── README.md
+```
+
+## Tech Stack
+
+```text
+Python
+NumPy
+Pandas
+scikit-learn
+Matplotlib
+Seaborn
+TF-IDF Vectorization
 Logistic Regression
+Random Forest
+```
 
-Random Forest Classifier
+## How to Run
 
-Evaluation metrics:
+Install the required dependencies:
 
-Accuracy, ROC AUC, Confusion Matrix, Classification Report
+```bash
+pip install numpy pandas scikit-learn matplotlib seaborn openpyxl
+```
 
-ROC Curves & Feature Importances
+Run the main script:
 
-📊 Example Outputs
-
-ROC Curve: Comparison of Logistic Regression vs Random Forest
-
-Confusion Matrices: Classification performance visualization
-
-Top Text Features: Indicative n-grams for depression prediction
-
-🚀 Getting Started
-1️⃣ Install Dependencies
-pip install numpy pandas scikit-learn matplotlib seaborn
-
-2️⃣ Run the Script
+```bash
 python predict_depression_from_social_media.py
+```
 
-3️⃣ Dataset
+The script generates synthetic data, trains the models, prints evaluation results, and saves plots in an `outputs/` directory.
 
-A synthetic dataset (synthetic_depression_dataset.xlsx) will be generated automatically.
+## Example Outputs
 
-🧪 Usage
+The project produces:
 
-Experiment with preprocessing (scaling, TF-IDF).
+- ROC curve comparison for Logistic Regression and Random Forest
+- Confusion matrix visualizations
+- Text feature importance chart for Logistic Regression
+- Synthetic dataset for experimentation
 
-Extend with deep learning models (LSTM, BERT).
+## Learning Outcomes
 
-Replace synthetic dataset with real-world anonymized datasets (with ethical approval).
+Through this project, I practiced building an end-to-end machine learning workflow:
 
-📌 Limitations
+- Designing a synthetic dataset for a sensitive use case
+- Combining structured behavioral data with unstructured text data
+- Building reusable scikit-learn pipelines
+- Comparing multiple classifiers
+- Interpreting model behavior through metrics and visualizations
+- Documenting ethical limitations clearly
 
-Dataset is synthetic → may not capture real-world complexity.
+## Limitations
 
-Models trained here are not suitable for clinical use.
+- The dataset is synthetic and may not reflect real-world social media behavior.
+- The model is not suitable for medical, psychological, or clinical decision-making.
+- Real-world work in this area requires consent, privacy protection, bias evaluation, and ethical approval.
 
-Intended purely for educational and research experimentation.
+## Author
 
-👨‍💻 Author
-
-Kamal Kumar
+**Kamal Kumar**  
+Email: yerrakamalkumar1@gmail.com  
+GitHub: [yerrakamalkumar1](https://github.com/yerrakamalkumar1)
